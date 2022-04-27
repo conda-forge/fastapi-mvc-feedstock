@@ -1,5 +1,5 @@
 {% set name = "fastapi-mvc" %}
-{% set version = "0.10.0" %}
+{% set version = "0.11.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/fastapi-mvc-{{ version }}.tar.gz
-  sha256: f01fd5bd2eff3172e101aa09f619487f21f217a8d828db32e7e764145740c1b7
+  sha256: 7f39d6e2470311f6b220dcb0271b779263c0872985a2c5128d77230eb6fee75e
 
 build:
   number: 0
@@ -32,10 +32,10 @@ test:
     - fastapi_mvc
     - fastapi_mvc.cli
     - fastapi_mvc.commands
-    - fastapi_mvc.exceptions
     - fastapi_mvc.generators
+    - fastapi_mvc.generators.controller
+    - fastapi_mvc.generators.generator
     - fastapi_mvc.parsers
-    - fastapi_mvc.template
     - fastapi_mvc.utils
   commands:
     - pip check
