@@ -1,5 +1,5 @@
 {% set name = "fastapi-mvc" %}
-{% set version = "0.12.0" %}
+{% set version = "0.13.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/fastapi-mvc-{{ version }}.tar.gz
-  sha256: 860d568c98283701712963b6c940406f6e92b96ec99d6cd9ccbfd2b22d6c20e8
+  sha256: 7664c8bd5291868121ccf100c8f521ca301c0688e0251e8092f0e5877747ed8a
 
 build:
   number: 0
@@ -24,7 +24,7 @@ requirements:
     - python >=3.7
   run:
     - click ~=8.1.3
-    - cookiecutter ~=1.7.3
+    - cookiecutter <1.8.0,>=1.7.3
     - python >=3.7
 
 test:
