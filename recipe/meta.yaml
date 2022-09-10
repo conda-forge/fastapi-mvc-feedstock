@@ -21,22 +21,15 @@ requirements:
   host:
     - pip
     - poetry-core >=1.0.0
-    - python >=3.7
+    - python >=3.7,<4.0
   run:
-    - click ~=8.1.3
-    - cookiecutter ~=2.1.1
-    - python >=3.7
+    - click >=8.1.3,<8.2.0
+    - cookiecutter >=2.1.1,<2.2.0
+    - python >=3.7,<4.0
 
 test:
   imports:
     - fastapi_mvc
-    - fastapi_mvc.cli
-    - fastapi_mvc.commands
-    - fastapi_mvc.generators
-    - fastapi_mvc.generators.controller
-    - fastapi_mvc.generators.generator
-    - fastapi_mvc.parsers
-    - fastapi_mvc.utils
   commands:
     - pip check
     - fastapi-mvc --help
@@ -45,6 +38,7 @@ test:
 
 about:
   home: https://github.com/rszamszur/fastapi-mvc
+  doc_url: https://fastapi-mvc.netlify.app/
   summary: Generate and manage FastAPI projects
   license: MIT
   license_file: LICENSE
