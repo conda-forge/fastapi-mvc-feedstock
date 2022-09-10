@@ -9,6 +9,8 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/fastapi-mvc-fee
 
 Summary: Generate and manage FastAPI projects
 
+Documentation: https://fastapi-mvc.netlify.app/
+
 Current build status
 ====================
 
