@@ -1,11 +1,11 @@
-About fastapi-mvc
-=================
+About fastapi-mvc-feedstock
+===========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/fastapi-mvc-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/rszamszur/fastapi-mvc
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/fastapi-mvc-feedstock/blob/main/LICENSE.txt)
 
 Summary: Generate and manage FastAPI projects
 
