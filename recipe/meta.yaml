@@ -7,11 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
   sha256: c6c82650ea025cf53d532a10412fd0cd851e603c08b338c91cc5fce847fc6a6e
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - fastapi-mvc = fastapi_mvc.cli.cli:cli
@@ -21,11 +21,11 @@ requirements:
   host:
     - pip
     - poetry-core >=1.0.0
-    - python >=3.8,<4.0
+    - python {{ python_min }}
   run:
     - click >=8.1.3,<8.2.0
     - copier ==6.2.0
-    - python >=3.8,<4.0
+    - python >={{ python_min }},<4.0
 
 test:
   imports:
@@ -35,6 +35,7 @@ test:
     - fastapi-mvc --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/rszamszur/fastapi-mvc
