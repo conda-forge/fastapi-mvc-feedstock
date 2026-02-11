@@ -1,5 +1,5 @@
 {% set name = "fastapi-mvc" %}
-{% set version = "0.28.1" %}
+{% set version = "0.29.0" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: c6c82650ea025cf53d532a10412fd0cd851e603c08b338c91cc5fce847fc6a6e
+  sha256: f7c53ef28d1c8931519b965444c36f942dfd8301305c82c1af58b803aa7ff7cd
 
 build:
-  number: 1
+  number: 0
   noarch: python
   entry_points:
     - fastapi-mvc = fastapi_mvc.cli.cli:cli
